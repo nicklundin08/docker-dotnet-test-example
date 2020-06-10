@@ -14,8 +14,6 @@ namespace DockerDotnetTestExample
 
             var conn = intermediateConnectionStringBuilder.ConnectionString;
 
-            //throw new Exception(conn);
-
             using(var sqlConn = new SqlConnection(conn))
             {
                 await sqlConn.OpenAsync();
